@@ -6,6 +6,7 @@
   "license": "MIT",
   "require": {
     "php": ">=7.4",
+    "spryker/cart": "^7.10",
     "spryker/customer-group": "^2.6",
     "spryker/kernel": "^3.64",
     "spryker/price-product": "^4.32",

@@ -4,17 +4,12 @@ image: registry.gitlab.nxs360.com/docker/php:7.4-cli
 stages:
   - validation
   - deploy
+  - post-test
 
 composer:validate:
   stage: validation
   script:
     - composer validate
-
-code:style:
-  stage: validation
-  script:
-    - composer install -o
-    - composer cs-check
 
 deploy:composer:
   stage: deploy

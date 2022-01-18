@@ -7,7 +7,6 @@ namespace ValanticSpryker\Zed\PriceProductCustomerGroup\Persistence;
 use Generated\Shared\Transfer\PriceProductCriteriaTransfer;
 use Generated\Shared\Transfer\PriceProductTransfer;
 use Generated\Shared\Transfer\QueryCriteriaTransfer;
-use Propel\Runtime\Collection\ObjectCollection;
 
 interface PriceProductCustomerGroupRepositoryInterface
 {
