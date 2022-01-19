@@ -9,7 +9,7 @@
     "spryker/cart": "^7.10",
     "spryker/customer-group": "^2.6",
     "spryker/kernel": "^3.64",
-    "spryker/price-product": "^4.32",
+    "spryker/price-product": "^4.31",
     "spryker/price-product-extension": "^1.5",
     "spryker/product": "^6.26",
     "spryker/propel-orm": "^1.14",
