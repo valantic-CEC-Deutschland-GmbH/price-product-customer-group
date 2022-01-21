@@ -29,6 +29,16 @@ Make sure to add **auth.json** to your **.gitignore**.
 composer req valantic-spryker/price-product-customer-group
 ```
 
+### Update shared config
+`config/Shared/config_default.php`
+
+```
+$config[KernelConstants::CORE_NAMESPACES] = [
+    ...
+    'ValanticSpryker',
+];
+```
+
 ### Register plugins
 `src/Pyz/Zed/PriceProduct/PriceProductDependencyProvider.php`
 

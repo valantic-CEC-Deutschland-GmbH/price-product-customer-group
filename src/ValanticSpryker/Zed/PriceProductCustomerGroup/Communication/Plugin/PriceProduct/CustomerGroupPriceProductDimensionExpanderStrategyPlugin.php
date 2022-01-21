@@ -4,6 +4,7 @@ declare(strict_types = 1);
 
 namespace ValanticSpryker\Zed\PriceProductCustomerGroup\Communication\Plugin\PriceProduct;
 
+use Generated\Shared\Transfer\PriceProductDimensionTransfer;
 use Spryker\Service\PriceProductExtension\Dependency\Plugin\PriceProductDimensionExpanderStrategyPluginInterface;
 use Spryker\Zed\Kernel\Communication\AbstractPlugin;
 
