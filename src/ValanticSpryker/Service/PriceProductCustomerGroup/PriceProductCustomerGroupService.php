@@ -4,6 +4,7 @@ declare(strict_types = 1);
 
 namespace ValanticSpryker\Service\PriceProductCustomerGroup;
 
+use Generated\Shared\Transfer\PriceProductFilterTransfer;
 use Spryker\Service\Kernel\AbstractService;
 
 /**

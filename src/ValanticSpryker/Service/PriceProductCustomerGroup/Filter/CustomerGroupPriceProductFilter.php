@@ -4,6 +4,9 @@ declare(strict_types = 1);
 
 namespace ValanticSpryker\Service\PriceProductCustomerGroup\Filter;
 
+use Generated\Shared\Transfer\PriceProductFilterTransfer;
+use Generated\Shared\Transfer\PriceProductTransfer;
+
 class CustomerGroupPriceProductFilter implements CustomerGroupPriceProductFilterInterface
 {
     /**

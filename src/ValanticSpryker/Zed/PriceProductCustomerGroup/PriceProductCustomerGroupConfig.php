@@ -16,7 +16,7 @@ class PriceProductCustomerGroupConfig extends AbstractBundleConfig
      *
      * @return string
      */
-    public function getPriceDimensionMerchantRelationship(): string
+    public function getPriceDimensionCustomerGroup(): string
     {
         return $this->getSharedConfig()
             ->getPriceDimensionCustomerGroup();

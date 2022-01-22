@@ -4,6 +4,8 @@ declare(strict_types = 1);
 
 namespace ValanticSpryker\Zed\PriceProductCustomerGroup\Persistence;
 
+use Generated\Shared\Transfer\VsyPriceProductCustomerGroupEntityTransfer;
+use Orm\Zed\PriceProductCustomerGroup\Persistence\VsyPriceProductCustomerGroup;
 use Propel\Runtime\Collection\ObjectCollection;
 use Spryker\Shared\Kernel\Transfer\EntityTransferInterface;
 use Spryker\Zed\Kernel\Persistence\AbstractEntityManager;

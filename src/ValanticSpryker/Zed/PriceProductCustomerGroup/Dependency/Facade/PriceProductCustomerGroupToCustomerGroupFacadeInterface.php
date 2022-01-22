@@ -4,6 +4,8 @@ declare(strict_types = 1);
 
 namespace ValanticSpryker\Zed\PriceProductCustomerGroup\Dependency\Facade;
 
+use Generated\Shared\Transfer\CustomerGroupTransfer;
+
 interface PriceProductCustomerGroupToCustomerGroupFacadeInterface
 {
     /**
@@ -11,5 +13,5 @@ interface PriceProductCustomerGroupToCustomerGroupFacadeInterface
      *
      * @return \Generated\Shared\Transfer\CustomerGroupTransfer
      */
-    public function getMerchantRelationshipById(CustomerGroupTransfer $customerGroupTransfer): CustomerGroupTransfer;
+    public function get(CustomerGroupTransfer $customerGroupTransfer): CustomerGroupTransfer;
 }

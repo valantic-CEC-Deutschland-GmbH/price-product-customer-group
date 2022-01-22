@@ -4,6 +4,8 @@ declare(strict_types = 1);
 
 namespace ValanticSpryker\Zed\PriceProductCustomerGroup\Business\Model;
 
+use Generated\Shared\Transfer\PriceProductTransfer;
+use Generated\Shared\Transfer\VsyPriceProductCustomerGroupEntityTransfer;
 use ValanticSpryker\Zed\PriceProductCustomerGroup\Dependency\Facade\PriceProductCustomerGroupToPriceProductFacadeInterface;
 use ValanticSpryker\Zed\PriceProductCustomerGroup\Persistence\PriceProductCustomerGroupEntityManagerInterface;
 use ValanticSpryker\Zed\PriceProductCustomerGroup\Persistence\PriceProductCustomerGroupRepositoryInterface;
@@ -99,17 +101,17 @@ class CustomerGroupPriceWriter implements CustomerGroupPriceWriterInterface
     /**
      * @param \Generated\Shared\Transfer\PriceProductTransfer $priceProductTransfer
      *
-     * @return \Generated\Shared\Transfer\SpyPriceProductCustomerGroupEntityTransfer
+     * @return \Generated\Shared\Transfer\VsyPriceProductCustomerGroupEntityTransfer
      */
     protected function getPriceProductCustomerGroupEntityTransfer(
         PriceProductTransfer $priceProductTransfer
-    ): SpyPriceProductCustomerGroupEntityTransfer {
+    ): VsyPriceProductCustomerGroupEntityTransfer {
         $idPriceProductCustomerGroup = $this->priceProductCustomerGroupRepository
             ->findIdByPriceProductTransfer($priceProductTransfer);
 
-        $priceProductCustomerGroupEntityTransfer = (new SpyPriceProductCustomerGroupEntityTransfer())
+        $priceProductCustomerGroupEntityTransfer = (new VsyPriceProductCustomerGroupEntityTransfer())
             ->setIdPriceProductCustomerGroup($idPriceProductCustomerGroup)
-            ->setFkMerchantRelationship($priceProductTransfer->getPriceDimension()->getIdMerchantRelationship())
+            ->setFkCustomerGroup($priceProductTransfer->getPriceDimension()->getIdCustomerGroup())
             ->setFkPriceProductStore((string)$priceProductTransfer->getMoneyValue()->getIdEntity());
 
         if ($priceProductTransfer->getIdProduct()) {

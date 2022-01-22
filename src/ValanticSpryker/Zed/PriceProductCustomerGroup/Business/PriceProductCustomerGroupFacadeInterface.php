@@ -4,6 +4,9 @@ declare(strict_types = 1);
 
 namespace ValanticSpryker\Zed\PriceProductCustomerGroup\Business;
 
+use Generated\Shared\Transfer\PriceProductDimensionTransfer;
+use Generated\Shared\Transfer\PriceProductTransfer;
+
 interface PriceProductCustomerGroupFacadeInterface
 {
     /**
@@ -21,7 +24,7 @@ interface PriceProductCustomerGroupFacadeInterface
 
     /**
      * Specification:
-     *  - Deletes connection records between spy_price_product_store and spy_price_product_business_unit by idMerchantRelationship
+     *  - Deletes connection records between spy_price_product_store and spy_price_product_business_unit by idCustomerGroup
      *
      * @api
      *
@@ -55,8 +58,8 @@ interface PriceProductCustomerGroupFacadeInterface
 
     /**
      * Specification:
-     *  - Sets price dimension type as merchant relationship.
-     *  - Sets price dimension name using the merchant relationship name.
+     *  - Sets price dimension type as customer group.
+     *  - Sets price dimension name using the customer group name.
      *
      * @api
      *

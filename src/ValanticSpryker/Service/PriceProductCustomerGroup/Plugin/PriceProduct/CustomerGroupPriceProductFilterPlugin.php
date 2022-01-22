@@ -4,6 +4,7 @@ declare(strict_types = 1);
 
 namespace ValanticSpryker\Service\PriceProductCustomerGroup\Plugin\PriceProduct;
 
+use Generated\Shared\Transfer\PriceProductFilterTransfer;
 use Spryker\Service\Kernel\AbstractPlugin;
 use Spryker\Service\PriceProductExtension\Dependency\Plugin\PriceProductFilterPluginInterface;
 use ValanticSpryker\Shared\PriceProductCustomerGroup\PriceProductCustomerGroupConfig;

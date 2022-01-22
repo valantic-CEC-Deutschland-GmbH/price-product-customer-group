@@ -4,6 +4,8 @@ declare(strict_types = 1);
 
 namespace ValanticSpryker\Zed\PriceProductCustomerGroup\Business\Model;
 
+use Generated\Shared\Transfer\CustomerGroupTransfer;
+use Generated\Shared\Transfer\PriceProductDimensionTransfer;
 use ValanticSpryker\Shared\PriceProductCustomerGroup\PriceProductCustomerGroupConfig;
 use ValanticSpryker\Zed\PriceProductCustomerGroup\Dependency\Facade\PriceProductCustomerGroupToCustomerGroupFacadeInterface;
 
@@ -34,7 +36,7 @@ class PriceProductDimensionExpander implements PriceProductDimensionExpanderInte
             ->setIdCustomerGroup($priceProductDimensionTransfer->getIdCustomerGroup());
 
         $customerGroupTransfer = $this->customerGroupFacade
-            ->getCustomerGroupById($customerGroupTransfer);
+            ->get($customerGroupTransfer);
 
         $priceProductDimensionTransfer->setType(PriceProductCustomerGroupConfig::PRICE_DIMENSION_CUSTOMER_GROUP);
         $priceProductDimensionTransfer->setName($customerGroupTransfer->getName());

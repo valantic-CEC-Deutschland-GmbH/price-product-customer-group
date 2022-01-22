@@ -31,7 +31,7 @@ class PriceProductCustomerGroupDependencyProvider extends AbstractBundleDependen
         $container = parent::provideBusinessLayerDependencies($container);
 
         $container = $this->addPriceProductFacade($container);
-        $container = $this->addMerchantRelationshipFacade($container);
+        $container = $this->addCustomerGroupFacade($container);
 
         return $container;
     }
@@ -57,7 +57,7 @@ class PriceProductCustomerGroupDependencyProvider extends AbstractBundleDependen
      *
      * @return \Spryker\Zed\Kernel\Container
      */
-    protected function addMerchantRelationshipFacade(Container $container)
+    protected function addCustomerGroupFacade(Container $container)
     {
         $container->set(static::FACADE_CUSTOMER_GROUP, function (Container $container) {
             return new PriceProductCustomerGroupToCustomerGroupFacadeBridge(

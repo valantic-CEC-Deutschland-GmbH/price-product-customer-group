@@ -5,6 +5,7 @@ declare(strict_types = 1);
 namespace ValanticSpryker\Zed\PriceProductCustomerGroup\Persistence;
 
 use Orm\Zed\PriceProduct\Persistence\SpyPriceProductStoreQuery;
+use Orm\Zed\PriceProductCustomerGroup\Persistence\VsyPriceProductCustomerGroupQuery;
 use Spryker\Zed\Kernel\Persistence\AbstractPersistenceFactory;
 use ValanticSpryker\Zed\PriceProductCustomerGroup\Persistence\Propel\PriceDimensionQueryExpander\CustomerGroupPriceQueryExpander;
 
@@ -24,11 +25,11 @@ class PriceProductCustomerGroupPersistenceFactory extends AbstractPersistenceFac
     }
 
     /**
-     * @return \Orm\Zed\PriceProductCustomerGroup\Persistence\PyzPriceProductCustomerGroupQuery
+     * @return \Orm\Zed\PriceProductCustomerGroup\Persistence\VsyPriceProductCustomerGroupQuery
      */
-    public function createPriceProductCustomerGroupQuery(): PyzPriceProductCustomerGroupQuery
+    public function createPriceProductCustomerGroupQuery(): VsyPriceProductCustomerGroupQuery
     {
-        return PyzPriceProductCustomerGroupQuery::create();
+        return VsyPriceProductCustomerGroupQuery::create();
     }
 
     /**

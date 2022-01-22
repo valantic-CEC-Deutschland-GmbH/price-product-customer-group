@@ -4,6 +4,8 @@ declare(strict_types = 1);
 
 namespace ValanticSpryker\Zed\PriceProductCustomerGroup\Business\Model;
 
+use Generated\Shared\Transfer\PriceProductDimensionTransfer;
+
 interface PriceProductDimensionExpanderInterface
 {
     /**
