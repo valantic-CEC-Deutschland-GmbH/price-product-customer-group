@@ -14,13 +14,14 @@ coverage:
 suites:
     Business:
         path: Business
-        class_name: PriceProductCustomerGroupTester
+        class_name: PriceProductCustomerGroupBusinessTester
         modules:
             enabled:
-                - Asserts
-                - \SprykerTest\Shared\Testify\Helper\Environment
+                - \SprykerTest\Shared\Testify\Helper\Environment:
+                      isolated: true
                 - \SprykerTest\Shared\Testify\Helper\ConfigHelper
                 - \SprykerTest\Shared\Testify\Helper\LocatorHelper
-                - \SprykerTest\Shared\Testify\Helper\DependencyHelper
-                - \SprykerTest\Shared\Testify\Helper\DataCleanupHelper
-                - \SprykerTest\Shared\Propel\Helper\TransactionHelper
+                - \SprykerTest\Shared\Testify\Helper\VirtualFilesystemHelper
+                - \SprykerTest\Shared\Transfer\Helper\TransferGenerateHelper:
+                      isolated: true
+

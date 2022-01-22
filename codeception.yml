@@ -1,6 +1,6 @@
 namespace: ValanticSprykerTest
 include:
-    - tests/SprykerTest/Zed/PriceProductCustomerGroup
+    - tests/ValanticSprykerTest/Zed/PriceProductCustomerGroup
 paths:
     tests: tests
     support: .
@@ -12,3 +12,7 @@ settings:
     colors: true
     memory_limit: 1024M
     log: true
+coverage:
+    enabled: true
+    whitelist: { include: ['src/*'] }
+bootstrap: bootstrap.php

@@ -15,17 +15,17 @@ class CustomerGroupPriceWriter implements CustomerGroupPriceWriterInterface
     /**
      * @var \ValanticSpryker\Zed\PriceProductCustomerGroup\Persistence\PriceProductCustomerGroupEntityManagerInterface
      */
-    protected $priceProductCustomerGroupEntityManager;
+    protected PriceProductCustomerGroupEntityManagerInterface $priceProductCustomerGroupEntityManager;
 
     /**
      * @var \ValanticSpryker\Zed\PriceProductCustomerGroup\Persistence\PriceProductCustomerGroupRepositoryInterface
      */
-    protected $priceProductCustomerGroupRepository;
+    protected PriceProductCustomerGroupRepositoryInterface $priceProductCustomerGroupRepository;
 
     /**
      * @var \ValanticSpryker\Zed\PriceProductCustomerGroup\Dependency\Facade\PriceProductCustomerGroupToPriceProductFacadeInterface
      */
-    protected $priceProductFacade;
+    protected PriceProductCustomerGroupToPriceProductFacadeInterface $priceProductFacade;
 
     /**
      * @param \ValanticSpryker\Zed\PriceProductCustomerGroup\Persistence\PriceProductCustomerGroupEntityManagerInterface $priceProductCustomerGroupEntityManager
