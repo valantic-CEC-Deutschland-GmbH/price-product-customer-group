@@ -14,7 +14,7 @@
         "spryker/product": "^6.25",
         "spryker/propel-orm": "^1.14",
         "spryker/transfer": "^3.29",
-        "valantic-spryker/price-product-customer-group-connector": "^0.2.0"
+        "valantic-spryker/price-product-customer-group-connector": "^0.3.0"
     },
     "require-dev": {
         "codeception/module-asserts": "^1.3.0",
