@@ -11,7 +11,7 @@ class PriceProductCustomerGroupToCartClientBridge implements PriceProductCustome
     /**
      * @var \Spryker\Client\Cart\CartClientInterface
      */
-    protected CartClientInterface $cartClient;
+    protected $cartClient;
 
     /**
      * @param \Spryker\Client\Cart\CartClientInterface $cartClient
