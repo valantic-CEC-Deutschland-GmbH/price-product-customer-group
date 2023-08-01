@@ -1,9 +1,9 @@
 {
-    "name": "valantic-spryker/price-product-customer-group",
+    "name": "valantic-cec/price-product-customer-group",
     "type": "library",
     "description": "Module containing database schema and required plugins for specific product prices per customer group.",
     "homepage": "https://www.valantic.com",
-    "license": "MIT",
+    "license": "proprietary",
     "require": {
         "php": ">=7.3",
         "spryker/cart": "^7.10",
@@ -46,10 +46,7 @@
         "sort-packages": true,
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
-        },
-        "gitlab-domains": [
-            "gitlab.nxs360.com"
-        ]
+        }
     },
     "authors": [
         {
@@ -64,11 +61,5 @@
     ],
     "include-path": [
         "src/"
-    ],
-    "repositories": {
-        "gitlab.nxs360.com/461": {
-            "type": "composer",
-            "url": "https://gitlab.nxs360.com/api/v4/group/461/-/packages/composer/packages.json"
-        }
-    }
+    ]
 }
