@@ -1,5 +1,5 @@
 {
-    "name": "valantic-cec/price-product-customer-group",
+    "name": "valantic-spryker/price-product-customer-group",
     "type": "library",
     "description": "Module containing database schema and required plugins for specific product prices per customer group.",
     "homepage": "https://www.valantic.com",
