@@ -6,7 +6,7 @@ Module containing database schema and required plugins for specific product pric
 
 ### Install package
 ```
-composer req valantic-cec/price-product-customer-group
+composer req valantic-spryker/price-product-customer-group
 ```
 
 ### Update shared config
